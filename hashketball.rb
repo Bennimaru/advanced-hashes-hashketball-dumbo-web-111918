@@ -128,7 +128,8 @@ def num_points_scored(players_name)
   game_hash.each {|location,team_data|
     team_data[:players].each {|name,stats|
       name == players_name
-        stats[:points] = points
+        stats[:points]
+        
             binding.pry
           
         
