@@ -130,7 +130,7 @@ def num_points_scored(players_name)
       if name == players_name
         stats.collect{|type,value|
           if type == :points
-            points << value
+            points= value
             binding.pry
           end
         }
