@@ -123,7 +123,7 @@ end
 
 
 def num_points_scored(players_name)
-  points=[]
+  points=0
   
   game_hash.collect {|location,team_data|
     team_data[:players].collect {|name,stats|
@@ -136,7 +136,7 @@ def num_points_scored(players_name)
       end  
     }
   }
-  points.join.to_i
+  points
 end
 
 def shoe_size(players_name)
