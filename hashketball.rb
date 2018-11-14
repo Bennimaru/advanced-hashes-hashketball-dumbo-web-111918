@@ -129,10 +129,9 @@ def num_points_scored(players_name)
     team_data[:players].each {|name,stats|
       if name == players_name
         stats[:points]
-          points = stats[:points]
+          points=stats[:points]
             binding.pry
-      end    
-        
+      end 
     }
   }
   points
