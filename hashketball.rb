@@ -130,9 +130,8 @@ def num_points_scored(players_name)
       name == players_name
         stats[:points] = points
             binding.pry
-          end
-        }
-      end  
+          
+        
     }
   }
   points
