@@ -125,12 +125,10 @@ end
 def num_points_scored(players_name)
   points=0
   
-  game_hash.collect {|location,team_data|
-    team_data[:players].collect {|name,stats|
-      if name == players_name
-        stats.collect{|type,value|
-          if type == :points
-            points= value
+  game_hash.each {|location,team_data|
+    team_data[:players].each {|name,stats|
+      name == players_name
+        stats[:points] = points
             binding.pry
           end
         }
